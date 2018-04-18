@@ -1,0 +1,62 @@
+#' 請同學依照指示修改`question4`這個物件
+#' 這個物件是100個同學在某次考試的成績
+question4 <- c(33, 42, 71, 26, 36, 1, 27, 45, 31, 23, 59, 45, 14, 79, 38, 
+42, 62, 27, 82, 67, 4, 56, 52, 28, 25, 90, 80, 97, 73, 47, 1, 
+33, 7, 9, 63, 45, 62, 51, 89, 43, 90, 43, 15, 73, 39, 65, 18, 
+77, 71, 65, 98, 21, 42, 35, 73, 8, 44, 60, 44, 23, 28, 42, 68, 
+25, 37, 29, 96, 52, 74, 31, 94, 8, 44, 16, 68, 75, 54, 46, 95, 
+8, 44, 74, 5, 36, 44, 4, 30, 41, 51, 23, 68, 7, 28, 17, 49, 34, 
+67, 65, 66, 79)
+names(question4) <- c("Claire", "Kyle", "Jasmine", "Kate", "Dylan", "Sarah", "Sophie", 
+"Riley", "Thomas", "Laura", "Tom", "Hayley", "Connor", "Joshua", 
+"Jordan", "Edward", "Emma", "Isabella", "Ryan", "Max", "Daniel", 
+"Liam", "Josh", "Alex", "David", "Mia", "James", "Olivia", "Matt", 
+"Chloe", "Ella", "Abbey", "Chris", "Andrew", "Jessica", "Callum", 
+"Noah", "Ruby", "Sean", "Jacob", "Taylor", "Charlotte", "Hannah", 
+"Nathan", "William", "Ethan", "Matthew", "Brayden", "Zoe", "Jackson", 
+"Emily", "Jayden", "Ashleigh", "Nick", "Holly", "Claudia", "Zac", 
+"Harry", "Nicole", "Natasha", "Grace", "Molly", "Lachlan", "Nicholas", 
+"Lachie", "Jade", "Patrick", "Jake", "John", "Lauren", "Chelsea", 
+"Julia", "Georgia", "Lucy", "Jess", "Erin", "Ebony", "Michael", 
+"Jack", "Ben", "Will", "Courtney", "Bailey", "Amy", "Caitlin", 
+"Sam", "Amber", "Stephanie", "Katie", "Maddy", "Amelia", "Oliver", 
+"Aaron", "Tayla", "Bella", "Lily", "Caitlyn", "Luke", "Cody", 
+"Samantha")
+
+#' 同學在作答的過程中都不應該動到`question4`這個變數的內容
+
+#' 請問`question4`中第50個同學的成績是多少？請將結果放到變數`answer4_2`
+answer4_2 <- c(question4[50])
+
+
+  
+#' 請不要更動以下的程式碼
+#' 這些程式碼會檢查同學的答案的型態，並且可能帶有提示
+stopifnot(is.numeric(answer4_2))
+stopifnot(length(answer4_2) == 1L)
+stopifnot(names(answer4_2) == names(question4)[50])
+
+stopifnot(isTRUE(all.equal(
+  question4,
+  structure(c(33, 42, 71, 26, 36, 1, 27, 45, 31, 23, 59, 45, 14, 
+79, 38, 42, 62, 27, 82, 67, 4, 56, 52, 28, 25, 90, 80, 97, 73, 
+47, 1, 33, 7, 9, 63, 45, 62, 51, 89, 43, 90, 43, 15, 73, 39, 
+65, 18, 77, 71, 65, 98, 21, 42, 35, 73, 8, 44, 60, 44, 23, 28, 
+42, 68, 25, 37, 29, 96, 52, 74, 31, 94, 8, 44, 16, 68, 75, 54, 
+46, 95, 8, 44, 74, 5, 36, 44, 4, 30, 41, 51, 23, 68, 7, 28, 17, 
+49, 34, 67, 65, 66, 79), .Names = c("Claire", "Kyle", "Jasmine", 
+"Kate", "Dylan", "Sarah", "Sophie", "Riley", "Thomas", "Laura", 
+"Tom", "Hayley", "Connor", "Joshua", "Jordan", "Edward", "Emma", 
+"Isabella", "Ryan", "Max", "Daniel", "Liam", "Josh", "Alex", 
+"David", "Mia", "James", "Olivia", "Matt", "Chloe", "Ella", "Abbey", 
+"Chris", "Andrew", "Jessica", "Callum", "Noah", "Ruby", "Sean", 
+"Jacob", "Taylor", "Charlotte", "Hannah", "Nathan", "William", 
+"Ethan", "Matthew", "Brayden", "Zoe", "Jackson", "Emily", "Jayden", 
+"Ashleigh", "Nick", "Holly", "Claudia", "Zac", "Harry", "Nicole", 
+"Natasha", "Grace", "Molly", "Lachlan", "Nicholas", "Lachie", 
+"Jade", "Patrick", "Jake", "John", "Lauren", "Chelsea", "Julia", 
+"Georgia", "Lucy", "Jess", "Erin", "Ebony", "Michael", "Jack", 
+"Ben", "Will", "Courtney", "Bailey", "Amy", "Caitlin", "Sam", 
+"Amber", "Stephanie", "Katie", "Maddy", "Amelia", "Oliver", "Aaron", 
+"Tayla", "Bella", "Lily", "Caitlyn", "Luke", "Cody", "Samantha"
+)))))
