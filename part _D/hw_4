@@ -23,16 +23,16 @@ names(question4) <- c("Claire", "Kyl4
 "Aaron", "Tayla", "Bella", "Lily", "Caitlyn", "Luke", "Cody", 
 "Samantha")
 
-#' 同學在作答的過程中都不應該動到`question4`這個變數的內容
+#' 不應該動到`question4`這個變數的內容
 
 #' 假設第86個同學的成績少算2分。
-#' 請同學複製`question4`到變數`answer4_1`後，
+#' 複製`question4`到變數`answer4_1`後，
 #' 對變數`answer4_1`做修正，把分數加回去。
 answer4_1 <- c(question4)
 answer4_1[86] <- 4+2
 
 #' 請不要更動以下的程式碼
-#' 這些程式碼會檢查同學的答案的型態，並且可能帶有提示
+#' 這些程式碼會檢查答案的型態，並且可能帶有提示
 stopifnot(isTRUE(all.equal(
   question4,
   structure(c(33, 42, 71, 26, 36, 1, 27, 45, 31, 23, 59, 45, 14, 
